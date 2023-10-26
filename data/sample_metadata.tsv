@@ -1,36 +1,58 @@
-sample-id	barcode-sequence	body-site	year	month	day	subject	reported-antibiotic-usage	days-since-experiment-start
-#q2:types	categorical	categorical	numeric	numeric	numeric	categorical	categorical	numeric
-L1S8	AGCTGACTAGTC	gut	2008	10	28	subject-1	Yes	0
-L1S57	ACACACTATGGC	gut	2009	1	20	subject-1	No	84
-L1S76	ACTACGTGTGGT	gut	2009	2	17	subject-1	No	112
-L1S105	AGTGCGATGCGT	gut	2009	3	17	subject-1	No	140
-L2S155	ACGATGCGACCA	left palm	2009	1	20	subject-1	No	84
-L2S175	AGCTATCCACGA	left palm	2009	2	17	subject-1	No	112
-L2S204	ATGCAGCTCAGT	left palm	2009	3	17	subject-1	No	140
-L2S222	CACGTGACATGT	left palm	2009	4	14	subject-1	No	168
-L3S242	ACAGTTGCGCGA	right palm	2008	10	28	subject-1	Yes	0
-L3S294	CACGACAGGCTA	right palm	2009	1	20	subject-1	No	84
-L3S313	AGTGTCACGGTG	right palm	2009	2	17	subject-1	No	112
-L3S341	CAAGTGAGAGAG	right palm	2009	3	17	subject-1	No	140
-L3S360	CATCGTATCAAC	right palm	2009	4	14	subject-1	No	168
-L5S104	CAGTGTCAGGAC	tongue	2008	10	28	subject-1	Yes	0
-L5S155	ATCTTAGACTGC	tongue	2009	1	20	subject-1	No	84
-L5S174	CAGACATTGCGT	tongue	2009	2	17	subject-1	No	112
-L5S203	CGATGCACCAGA	tongue	2009	3	17	subject-1	No	140
-L5S222	CTAGAGACTCTT	tongue	2009	4	14	subject-1	No	168
-L1S140	ATGGCAGCTCTA	gut	2008	10	28	subject-2	Yes	0
-L1S208	CTGAGATACGCG	gut	2009	1	20	subject-2	No	84
-L1S257	CCGACTGAGATG	gut	2009	3	17	subject-2	No	140
-L1S281	CCTCTCGTGATC	gut	2009	4	14	subject-2	No	168
-L2S240	CATATCGCAGTT	left palm	2008	10	28	subject-2	Yes	0
-L2S309	CGTGCATTATCA	left palm	2009	1	20	subject-2	No	84
-L2S357	CTAACGCAGTCA	left palm	2009	3	17	subject-2	No	140
-L2S382	CTCAATGACTCA	left palm	2009	4	14	subject-2	No	168
-L3S378	ATCGATCTGTGG	right palm	2008	10	28	subject-2	Yes	0
-L4S63	CTCGTGGAGTAG	right palm	2009	1	20	subject-2	No	84
-L4S112	GCGTTACACACA	right palm	2009	3	17	subject-2	No	140
-L4S137	GAACTGTATCTC	right palm	2009	4	14	subject-2	No	168
-L5S240	CTGGACTCATAG	tongue	2008	10	28	subject-2	Yes	0
-L6S20	GAGGCTCATCAT	tongue	2009	1	20	subject-2	No	84
-L6S68	GATACGTCCTGA	tongue	2009	3	17	subject-2	No	140
-L6S93	GATTAGCACTCT	tongue	2009	4	14	subject-2	No	168
+sample-id	body-site	year	month	date	subject	days-since-experiment-start
+#q2:types	categorical	numeric	numeric	numeric	categorical	numeric
+L1S1	gut	2008	10	21	subject-1	0
+L1S133	gut	2008	10	21	subject-2	0
+L1S163	gut	2008	11	20	subject-2	30
+L1S175	gut	2008	12	10	subject-2	50
+L1S202	gut	2009	01	13	subject-2	84
+L1S223	gut	2009	02	10	subject-2	112
+L1S231	gut	2009	02	18	subject-2	120
+L1S250	gut	2009	03	10	subject-2	140
+L1S31	gut	2008	11	20	subject-1	30
+L1S40	gut	2008	12	10	subject-1	50
+L1S54	gut	2009	01	13	subject-1	84
+L1S69	gut	2009	02	10	subject-1	112
+L1S77	gut	2009	02	18	subject-1	120
+L1S98	gut	2009	03	10	subject-1	140
+L2S127	left palm	2008	11	20	subject-1	30
+L2S137	left palm	2008	12	10	subject-1	50
+L2S154	left palm	2009	01	13	subject-1	84
+L2S168	left palm	2009	02	10	subject-1	112
+L2S176	left palm	2009	02	18	subject-1	120
+L2S197	left palm	2009	03	10	subject-1	140
+L2S233	left palm	2008	10	21	subject-2	0
+L2S263	left palm	2008	11	20	subject-2	30
+L2S275	left palm	2008	12	10	subject-2	50
+L2S303	left palm	2009	01	13	subject-2	84
+L2S324	left palm	2009	02	10	subject-2	112
+L2S331	left palm	2009	02	18	subject-2	120
+L2S350	left palm	2009	03	10	subject-2	140
+L2S97	left palm	2008	10	21	subject-1	0
+L3S235	right palm	2008	10	21	subject-1	0
+L3S265	right palm	2008	11	20	subject-1	30
+L3S275	right palm	2008	12	10	subject-1	50
+L3S293	right palm	2009	01	13	subject-1	84
+L3S306	right palm	2009	02	10	subject-1	112
+L3S314	right palm	2009	02	18	subject-1	120
+L3S334	right palm	2009	03	10	subject-1	140
+L3S371	right palm	2008	10	21	subject-2	0
+L4S105	right palm	2009	03	10	subject-2	140
+L4S18	right palm	2008	11	20	subject-2	30
+L4S30	right palm	2008	12	10	subject-2	50
+L4S57	right palm	2009	01	13	subject-2	84
+L4S78	right palm	2009	02	10	subject-2	112
+L4S85	right palm	2009	02	18	subject-2	120
+L5S127	tongue	2008	11	20	subject-1	30
+L5S137	tongue	2008	12	10	subject-1	50
+L5S154	tongue	2009	01	13	subject-1	84
+L5S167	tongue	2009	02	10	subject-1	112
+L5S175	tongue	2009	02	18	subject-1	120
+L5S196	tongue	2009	03	10	subject-1	140
+L5S233	tongue	2008	10	21	subject-2	0
+L5S263	tongue	2008	11	20	subject-2	30
+L5S275	tongue	2008	12	10	subject-2	50
+L5S97	tongue	2008	10	21	subject-1	0
+L6S14	tongue	2009	01	13	subject-2	84
+L6S35	tongue	2009	02	10	subject-2	112
+L6S42	tongue	2009	02	18	subject-2	120
+L6S61	tongue	2009	03	10	subject-2	140
