@@ -1,11 +1,14 @@
 # QIIME 2 Tutorial: Read Processing and Machine Learning
 
-[![Read Processing (Colab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bokulich-lab/uzh-microbiome-workshop/blob/main/read_processing.ipynb)
-[![Machine Learning (Colab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bokulich-lab/uzh-microbiome-workshop/blob/main/machine_learning.ipynb)
-
-This repository contains materials accompanying the workshop **Microbiome-Based Tools: From Research to Application**. To jump directly to the analysis notebook, click on the badge above ⬆️.
+This repository contains materials accompanying the workshop **Microbiome-Based Tools: From Research to Application**. To jump directly to the analysis notebooks, click on the badges below.
 
 These notebooks describe simplified analyses of microbiome datasets using the with the bioinformatics platform [QIIME 2](https://qiime2.org/). 16S rRNA sequence data are used to evaluate bacterial composition of several different ecosystems; they are subsequently used to train and evaluate machine learning models. To learn more about the QIIME 2 project and applications in microbiome research, visit https://qiime2.org/.
+
+## Read processing tutorial
+[![Read Processing (Colab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bokulich-lab/uzh-microbiome-workshop/blob/main/read_processing.ipynb)
+
+## Machine learning tutorial
+[![Machine Learning (Colab)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bokulich-lab/uzh-microbiome-workshop/blob/main/machine_learning.ipynb)
 
 ## Source attribution
 

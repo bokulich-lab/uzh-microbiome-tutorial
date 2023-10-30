@@ -97,9 +97,9 @@ if __name__ == "__main__":
         run_and_check(
             ["mamba", "install", "-n", "base", "-y",
              "-c", "conda-forge", "-c", "bioconda", "-c", "qiime2",
-             "-c", "https://packages.qiime2.org/qiime2/2023.2/tested/",
+             "-c", "https://packages.qiime2.org/qiime2/2023.9/tested/",
              "-c", "defaults",
-             "qiime2=2023.2", "q2cli", "q2templates", "q2-alignment",
+             "qiime2=2023.9", "q2cli", "q2templates", "q2-alignment",
              "q2-composition", "q2-cutadapt", "q2-dada2", "q2-demux",
              "q2-deblur", "q2-diversity", "q2-diversity-lib", "q2-emperor",
              "q2-feature-classifier", "q2-feature-table",
