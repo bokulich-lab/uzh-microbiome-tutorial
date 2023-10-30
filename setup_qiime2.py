@@ -86,16 +86,7 @@ if __name__ == "__main__":
 
     if not has_qiime:
         run_and_check(
-            ["conda", "install", "mamba", "-y", "-n", "base",
-             "-c", "conda-forge"],
-            "mamba",
-            ":mag: Installing mamba...",
-            "could not install mamba :sob:",
-            ":mag: Done."
-        )
-
-        run_and_check(
-            ["mamba", "install", "-n", "base", "-y",
+            ["conda", "install", "-n", "base", "-y",
              "-c", "conda-forge", "-c", "bioconda", "-c", "qiime2",
              "-c", "https://packages.qiime2.org/qiime2/2023.9/tested/",
              "-c", "defaults",
@@ -112,54 +103,6 @@ if __name__ == "__main__":
             ":mag: Installing QIIME 2. This may take a little bit.\n :clock1:",
             "could not install QIIME 2 :sob:",
             ":mag: Done."
-        )
-
-        run_and_check(
-            ["pip", "install", "redbiom"],
-            "Successfully installed",
-            ":mag: Installing redbiom. "
-            "This may take a little bit.\n :clock1:",
-            "could not install redbiom :sob:",
-            ":mag: Done."
-        )
-
-        run_and_check(
-            ["pip", "install", "q2-clawback"],
-            "Successfully installed",
-            ":mag: Installing q2-clawback. "
-            "This may take a little bit.\n :clock1:",
-            "could not install q2-clawback :sob:",
-            ":mag: Done."
-        )
-
-        run_and_check(
-            ["pip", "install", "git+https://github.com/bokulich-lab/RESCRIPt.git"],
-            "Successfully installed",
-            ":mag: Installing RESCRIPt. "
-            "This may take a little bit.\n :clock1:",
-            "could not install RESCRIPt :sob:",
-            ":mag: Done."
-        )
-
-        run_and_check(
-            ["pip", "install", "git+https://github.com/qiime2/provenance-lib.git"],
-            "Successfully installed",
-            ":mag: Installing provenance-lib. "
-            "This may take a little bit.\n :clock1:",
-            "could not install provenance-lib :sob:",
-            ":mag: Done."
-        )
-
-        # this is a hack to make SRA tools work: this command fails but somehow
-        # still manages to configure the toolkit properly
-        run_and_check(
-            ["vdb-config", "--interactive"],
-            "SIGNAL",
-            ":mag: Fixing SRA Tools configuration :clock1:",
-            "could not configure SRA Tools :sob:",
-            ":mag: Done.",
-            env_vars={"CONDA_PREFIX": "/usr/local"},
-            check_returncode=False
         )
 
         run_and_check(
@@ -180,13 +123,6 @@ if __name__ == "__main__":
         ":bar_chart: QIIME 2 command line looks good :tada:"
     )
 
-    run_and_check(
-        ["prefetch", "--help"],
-        "Usage: prefetch",
-        ":bar_chart: Checking that SRA Toolkit works...",
-        "SRA Toolkit does not seem to work :sob:",
-        ":bar_chart: SRA Toolkit looks good :tada:"
-    )
 
     if sys.version_info[0:2] == (3, 8):
         sys.path.append("/usr/local/lib/python3.8/site-packages")
