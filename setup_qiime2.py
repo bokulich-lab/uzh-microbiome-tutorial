@@ -1,6 +1,6 @@
 """Set up QIIME 2 on Google colab.
 
-Do not use this on o local machine, especially not as an admin!
+Do not run this on a local machine, especially not as an admin!
 """
 
 import os
@@ -97,8 +97,7 @@ if __name__ == "__main__":
              "q2-fragment-insertion", "q2-gneiss", "q2-longitudinal",
              "q2-metadata", "q2-mystery-stew", "q2-phylogeny",
              "q2-quality-control", "q2-quality-filter", "q2-sample-classifier",
-             "q2-taxa", "q2-vsearch", "q2-fondue", "q2-types-genomics",
-             "ncbi-datasets-pylib", "pandas<2"],
+             "q2-taxa", "q2-vsearch", "pandas<2"],
             "Executing transaction: ...working... done",
             ":mag: Installing QIIME 2. This may take a little bit.\n :clock1:",
             "could not install QIIME 2 :sob:",
