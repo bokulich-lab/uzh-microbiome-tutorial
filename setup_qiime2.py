@@ -1,6 +1,6 @@
 """Set up QIIME 2 on Google colab.
 
-Do not run this on a local machine, especially not as an admin!
+Do not use this on o local machine, especially not as an admin!
 """
 
 import os
@@ -86,9 +86,18 @@ if __name__ == "__main__":
 
     if not has_qiime:
         run_and_check(
-            ["conda", "install", "-n", "base", "-y",
+            ["conda", "install", "mamba", "-y", "-n", "base",
+             "-c", "conda-forge"],
+            "mamba",
+            ":mag: Installing mamba...",
+            "could not install mamba :sob:",
+            ":mag: Done."
+        )
+
+        run_and_check(
+            ["mamba", "install", "-n", "base", "-y",
              "-c", "conda-forge", "-c", "bioconda", "-c", "qiime2",
-             "-c", "https://packages.qiime2.org/qiime2/2023.9/amplicon/passed/",
+             "-c", "https://packages.qiime2.org/qiime2/2023.9/tested/",
              "-c", "defaults",
              "qiime2=2023.9", "q2cli", "q2templates", "q2-alignment",
              "q2-composition", "q2-cutadapt", "q2-dada2", "q2-demux",
@@ -104,6 +113,17 @@ if __name__ == "__main__":
             ":mag: Done."
         )
 
+        run_and_check(
+            ["pip", "install", "redbiom"],
+            "Successfully installed",
+            ":mag: Installing redbiom. "
+            "This may take a little bit.\n :clock1:",
+            "could not install redbiom :sob:",
+            ":mag: Done."
+        )
+
+        # this is a hack to make SRA tools work: this command fails but somehow
+        # still manages to configure the toolkit properly
         run_and_check(
             ["pip", "install", "empress"],
             "Successfully installed empress-",
@@ -121,7 +141,6 @@ if __name__ == "__main__":
         "QIIME 2 command line does not seem to work :sob:",
         ":bar_chart: QIIME 2 command line looks good :tada:"
     )
-
 
     if sys.version_info[0:2] == (3, 8):
         sys.path.append("/usr/local/lib/python3.8/site-packages")
