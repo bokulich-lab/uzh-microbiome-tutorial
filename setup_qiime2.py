@@ -1,6 +1,6 @@
 """Set up QIIME 2 on Google colab.
 
-Do not use this on o local machine, especially not as an admin!
+Do not use this on a local machine, especially not as an admin!
 """
 
 import os
@@ -16,7 +16,7 @@ has_conda = "conda version" in os.popen("conda info").read()
 has_qiime = "QIIME 2 release:" in os.popen("qiime info").read()
 
 
-MINICONDA_INSTALLER = "Miniconda3-latest-Linux-x86_64.sh"
+MINICONDA_INSTALLER = "Miniconda3-py38_23.3.1-0-Linux-x86_64.sh"
 MINICONDA_PATH = (
     f"https://repo.anaconda.com/miniconda/{MINICONDA_INSTALLER}"
 )
@@ -97,17 +97,17 @@ if __name__ == "__main__":
         run_and_check(
             ["mamba", "install", "-n", "base", "-y",
              "-c", "conda-forge", "-c", "bioconda", "-c", "qiime2",
-             "-c", "https://packages.qiime2.org/qiime2/2023.9/amplicon/passed/",
+             "-c", "https://packages.qiime2.org/qiime2/2023.2/tested/",
              "-c", "defaults",
-             "qiime2=2023.9", "q2cli", "q2templates", "q2-alignment",
+             "qiime2=2023.2", "q2cli", "q2templates", "q2-alignment",
              "q2-composition", "q2-cutadapt", "q2-dada2", "q2-demux",
              "q2-deblur", "q2-diversity", "q2-diversity-lib", "q2-emperor",
              "q2-feature-classifier", "q2-feature-table",
              "q2-fragment-insertion", "q2-gneiss", "q2-longitudinal",
              "q2-metadata", "q2-mystery-stew", "q2-phylogeny",
              "q2-quality-control", "q2-quality-filter", "q2-sample-classifier",
-             "q2-taxa", "q2-vsearch", "pandas<2"],
-            "Executing transaction: ...working... done",
+             "q2-taxa", "q2-vsearch", "pandas<2", "ipykernel"],
+            "mamba",
             ":mag: Installing QIIME 2. This may take a little bit.\n :clock1:",
             "could not install QIIME 2 :sob:",
             ":mag: Done."
