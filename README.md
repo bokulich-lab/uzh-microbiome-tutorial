@@ -18,7 +18,7 @@ In this notebook, we use previously processed 16S rRNA sequence data to train an
 
 These analysis notebooks were adapted from the [QIIME 2 Moving Pictures tutorial](https://docs.qiime2.org/2023.9/tutorials/moving-pictures/) and [`q2-sample-classifier` tutorial](https://docs.qiime2.org/2023.9/tutorials/sample-classifier/). A study based on these samples was originally published in [Caporaso et al. (2011)](https://www.ncbi.nlm.nih.gov/pubmed/21624126).
 
-The Google Colab setup script was adapted from the [**Advanced Block Course: Computational Biology**](https://github.com/bokulich-lab/advanced-comp-bio-tutorial.git).
+The Google Colab setup script was adapted from the [2023 ISB Virtual Microbiome Series workshop](https://github.com/Gibbons-Lab/isb_course_2023/tree/main).
 
 ## Licensing
 
